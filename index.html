@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="记录六位成员探索多模态三维动画的项目进展。" data-en-content="A shared project notebook documenting the evolving work of six members exploring multimodal 3D animation." data-zh-content="记录六位成员探索多模态三维动画的项目进展。" name="description"/>
+<title data-en="Multimodal Animation — Project Notebook" data-zh="多模态动画 — 项目记录">多模态动画 — 项目记录</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="language.js"></script></head>
+<body>
+<a class="skip-link" data-en="Skip to content" data-zh="跳转到内容" href="#team">跳转到内容</a>
+<main class="page" id="top">
+<div class="language-bar"><button aria-label="Switch to English" hidden="" id="language-switch" lang="en" type="button">English</button></div><header>
+<h1><span data-en="A Multimodal Model Pipeline" data-zh="基于多模态模型的">基于多模态模型的</span><br/><span data-en="for 3D Animation" data-zh="三维动画生成流水线">三维动画生成流水线</span></h1>
+</header>
+<section aria-label="团队" class="team" data-en-aria-label="Team" data-zh-aria-label="团队" id="team">
+<div class="team-grid">
+<a class="team-card" href="#member-1">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Yichen Wen" data-zh="文一宸">文一宸</h3>
+<p class="team-role" data-en="Storyboard &amp; Shot Design" data-zh="分镜与镜头设计">分镜与镜头设计</p>
+<p class="team-contribution" data-en="Plans the story, camera angles, shot composition, and timing." data-zh="规划故事、拍摄角度、镜头构图与时序。">规划故事、拍摄角度、镜头构图与时序。</p>
+</a>
+<a class="team-card" href="#member-2">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Bin Yang" data-zh="杨彬">杨彬</h3>
+<p class="team-role" data-en="Character Movement Generation" data-zh="角色动作生成">角色动作生成</p>
+<p class="team-contribution" data-en="Turns character models and action directions into animated motion." data-zh="将角色模型和动作指令转化为动画动作。">将角色模型和动作指令转化为动画动作。</p>
+</a>
+<a class="team-card" href="#member-3">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Hao Xu" data-zh="徐浩">徐浩</h3>
+<p class="team-role" data-en="Physics Effects Simulation" data-zh="物理特效仿真">物理特效仿真</p>
+<p class="team-contribution" data-en="Develops cloud–rigid body interactions, wakes, and drag." data-zh="研究云与刚体的交互、尾流和阻力。">研究云与刚体的交互、尾流和阻力。</p>
+</a>
+<a class="team-card" href="#member-4">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Ziran Yin" data-zh="殷梓然">殷梓然</h3>
+<p class="team-role" data-en="3D Scene Generation" data-zh="三维场景生成">三维场景生成</p>
+<p class="team-contribution" data-en="Builds environments and spatial layouts from scene references." data-zh="根据场景参考构建环境与空间布局。">根据场景参考构建环境与空间布局。</p>
+</a>
+<a class="team-card" href="#member-5">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Shengyu Li" data-zh="李晟宇">李晟宇</h3>
+<p class="team-role" data-en="Music Generation" data-zh="音乐生成">音乐生成</p>
+<p class="team-contribution" data-en="Creates music around narrative mood and animation cues." data-zh="根据叙事情绪与动画节奏生成音乐。">根据叙事情绪与动画节奏生成音乐。</p>
+</a>
+<a class="team-card" href="#member-6">
+<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<h3 data-en="Bingchen Duan" data-zh="段柄辰">段柄辰</h3>
+<p class="team-role" data-en="Synchronization &amp; AI Memory" data-zh="同步与 AI 记忆">同步与 AI 记忆</p>
+<p class="team-contribution" data-en="Coordinates motion and music while maintaining continuity across shots." data-zh="协调动作与音乐，保持跨镜头的一致性。">协调动作与音乐，保持跨镜头的一致性。</p>
+</a>
+</div>
+</section>
+<section aria-labelledby="overview-title" class="overview" id="overview">
+<h2 data-en="About the project" data-zh="项目简介" id="overview-title">项目简介</h2>
+<p data-en="We are exploring a modular pipeline that turns narrative text, character images, and scene images or videos into 3D animation. Six project journals document the work from early experiments to integration and evaluation." data-zh="我们正在探索一条模块化流水线，将叙事文本、角色图像以及场景图像或视频转化为三维动画。六个工作方向涵盖前期实验、系统集成与评估。">我们正在探索一条模块化流水线，将叙事文本、角色图像以及场景图像或视频转化为三维动画。六个工作方向涵盖前期实验、系统集成与评估。</p>
+<p data-en="The shared question: how can scene reconstruction, character action, physical simulation, and music work together to produce a coherent animated video?" data-zh="核心问题是：如何让场景重建、角色动作、物理仿真与音乐协同工作，生成连贯的动画视频？">核心问题是：如何让场景重建、角色动作、物理仿真与音乐协同工作，生成连贯的动画视频？</p>
+</section>
+<section aria-labelledby="pipeline-title" class="pipeline" id="pipeline">
+<h2 data-en="Pipeline" data-zh="技术流程" id="pipeline-title">技术流程</h2>
+<figure class="pipeline-figure">
+<a aria-label="查看原尺寸流程图" data-en-aria-label="View full-size pipeline diagram" data-zh-aria-label="查看原尺寸流程图" href="assets/pipeline-composition.png"><img alt="场景图像或视频用于三维场景重建，角色图像用于角色模型重建。文本输入智能体编剧，分为动作和音乐两个分支；角色模型也输入动作分支。场景重建与动作共同输入场景仿真，最终输出视频。" data-en-alt="Scene images or video feed 3D scene reconstruction. Character images feed character model reconstruction. Text feeds agent scriptwriting, which branches into action and music. Character models also feed action. Scene reconstruction and action connect to scene simulation, with video as the output." data-zh-alt="场景图像或视频用于三维场景重建，角色图像用于角色模型重建。文本输入智能体编剧，分为动作和音乐两个分支；角色模型也输入动作分支。场景重建与动作共同输入场景仿真，最终输出视频。" height="565" src="assets/pipeline-composition.png" width="1024"/></a>
+<figcaption data-en="Fig. 1 · Group pipeline supplied for the project." data-zh="图 1 · 项目整体技术流程。">图 1 · 项目整体技术流程。</figcaption>
+</figure>
+<p data-en="Scene references provide the environment; character references provide the model. Agent scriptwriting turns the narrative into directions for action and music. Scene simulation brings the environment and action together for video output." data-zh="场景参考用于构建环境，角色参考用于构建模型。智能体编剧将叙事转化为动作与音乐指令，场景仿真再整合环境和动作，输出视频。">场景参考用于构建环境，角色参考用于构建模型。智能体编剧将叙事转化为动作与音乐指令，场景仿真再整合环境和动作，输出视频。</p>
+<p data-en="Our six work areas extend this structure with storyboard and shot planning, physical environment interactions, and shared memory and timing to coordinate the generated motion and music." data-zh="六个工作方向在此基础上加入分镜与镜头规划、物理环境交互，以及共享记忆和时序控制，以协调生成的动作与音乐。">六个工作方向在此基础上加入分镜与镜头规划、物理环境交互，以及共享记忆和时序控制，以协调生成的动作与音乐。</p>
+<details>
+<summary data-en="How the six work areas connect" data-zh="六个工作方向如何协作">六个工作方向如何协作</summary>
+<ol class="pipeline-connections">
+<li><a data-en="Storyboard &amp; shot design" data-zh="分镜与镜头设计" href="#member-1">分镜与镜头设计</a><span data-en=" translates the narrative into a shot plan that guides scriptwriting and production." data-zh="将叙事转化为镜头规划，指导编剧与制作。">将叙事转化为镜头规划，指导编剧与制作。</span></li>
+<li><a data-en="Character movement" data-zh="角色动作" href="#member-2">角色动作</a><span data-en=" connects character models and action directives to animated motion." data-zh="结合角色模型与动作指令，生成动画动作。">结合角色模型与动作指令，生成动画动作。</span></li>
+<li><a data-en="Physical simulation" data-zh="物理仿真" href="#member-3">物理仿真</a><span data-en=" extends scene simulation with dynamic cloud–rigid body interactions." data-zh="为场景仿真加入动态的云与刚体交互。">为场景仿真加入动态的云与刚体交互。</span></li>
+<li><a data-en="3D scene generation" data-zh="三维场景生成" href="#member-4">三维场景生成</a><span data-en=" develops the environment from scene images or video." data-zh="根据场景图像或视频构建环境。">根据场景图像或视频构建环境。</span></li>
+<li><a data-en="Music generation" data-zh="音乐生成" href="#member-5">音乐生成</a><span data-en=" develops the music branch from narrative and timing cues." data-zh="根据叙事与时序提示生成音乐。">根据叙事与时序提示生成音乐。</span></li>
+<li><a data-en="Synchronization &amp; AI memory" data-zh="同步与 AI 记忆" href="#member-6">同步与 AI 记忆</a><span data-en=" coordinates directives, continuity, and a shared audiovisual timeline." data-zh="协调指令、连续性与共享视听时间线。">协调指令、连续性与共享视听时间线。</span></li>
+</ol>
+</details>
+</section>
+<section aria-labelledby="member-1-title" class="member" id="member-1">
+<div class="work-label">
+<p class="step" data-en="Part 01" data-zh="第 01 部分">第 01 部分</p>
+<h2 data-en="Storyboard &amp; Shot Design" data-zh="分镜与镜头设计" id="member-1-title">分镜与镜头设计</h2>
+<p class="work-author" data-en="Yichen Wen" data-zh="文一宸">文一宸</p>
+</div>
+<div class="work-content">
+<p><a data-en="Story provisions — storyboard project" data-zh="Story provisions — 分镜项目" href="https://blog.hoytxu.me/story-provisions">Story provisions — 分镜项目</a></p>
+<p class="role-description" data-en="Translate the narrative into storyboards, shot composition, camera angles, and timing that guide the agent scriptwriting and animation stages." data-zh="将叙事转化为分镜、镜头构图、拍摄角度与时序安排，指导智能体编剧和动画制作。">将叙事转化为分镜、镜头构图、拍摄角度与时序安排，指导智能体编剧和动画制作。</p>
+</div>
+</section>
+<section aria-labelledby="member-2-title" class="member" id="member-2">
+<div class="work-label">
+<p class="step" data-en="Part 02" data-zh="第 02 部分">第 02 部分</p>
+<h2 data-en="Character Movement Generation" data-zh="角色动作生成" id="member-2-title">角色动作生成</h2>
+<p class="work-author" data-en="Bin Yang" data-zh="杨彬">杨彬</p>
+</div>
+<div class="work-content">
+<p class="role-description" data-en="Connect reconstructed character models with the agent’s action directives to generate movements for scene simulation." data-zh="将重建的角色模型与智能体的动作指令相结合，为场景仿真生成角色动作。">将重建的角色模型与智能体的动作指令相结合，为场景仿真生成角色动作。</p>
+</div>
+</section>
+<section aria-labelledby="member-3-title" class="member" id="member-3">
+<div class="work-label">
+<p class="step" data-en="Part 03" data-zh="第 03 部分">第 03 部分</p>
+<h2 data-en="Physics Effects Simulation" data-zh="物理特效仿真" id="member-3-title">物理特效仿真</h2>
+<p class="work-author" data-en="Hao Xu" data-zh="徐浩">徐浩</p>
+</div>
+<div class="work-content">
+<p class="role-description" data-en="Develop a physical simulation layer in which moving objects disturb a warm cloud volume, producing cloud deformation, wakes, and drag. This work extends the scene simulation stage of the group pipeline." data-zh="构建物理仿真层，模拟运动物体扰动暖云体积时产生的云体变形、尾流与阻力，扩展整体流水线中的场景仿真环节。">构建物理仿真层，模拟运动物体扰动暖云体积时产生的云体变形、尾流与阻力，扩展整体流水线中的场景仿真环节。</p><figure class="journal-media"><a aria-label="查看原尺寸云体图像" data-en-aria-label="View full-size cloud image" data-zh-aria-label="查看原尺寸云体图像" href="assets/disney_cloud.png"><img alt="Blender 中的体积云渲染与材质节点。" data-en-alt="Volumetric cloud rendering and material nodes in Blender." data-zh-alt="Blender 中的体积云渲染与材质节点。" height="1600" loading="lazy" src="assets/disney_cloud.png" width="2560"/></a><figcaption data-en="Cloud rendering · Hao Xu’s physics effects work." data-zh="云体渲染 · 徐浩的物理特效工作。">云体渲染 · 徐浩的物理特效工作。</figcaption></figure>
+<p class="source-note"><span data-en="Research scope from Hao Xu’s thesis proposal, " data-zh="研究范围依据 徐浩 的论文开题报告">研究范围依据 徐浩 的论文开题报告</span><cite data-en="Cloud–Rigid Body Coupling Simulation" data-zh="云与刚体耦合仿真">云与刚体耦合仿真</cite><span data-en=", §§2.1–2.3. The methods and milestones below are proposed work; results can be added as the project develops." data-zh="第 2.1–2.3 节。以下方法与里程碑为研究计划，成果将随项目推进补充。">第 2.1–2.3 节。以下方法与里程碑为研究计划，成果将随项目推进补充。</span></p>
+<h3 data-en="Research question" data-zh="研究问题">研究问题</h3>
+<p data-en="Which physical mechanisms are needed for stable, visually believable two-way interaction between rigid bodies and warm clouds?" data-zh="实现刚体与暖云之间稳定、视觉可信的双向交互，需要哪些物理机制？">实现刚体与暖云之间稳定、视觉可信的双向交互，需要哪些物理机制？</p>
+<h3 data-en="Connection to the pipeline" data-zh="与整体流程的衔接">与整体流程的衔接</h3>
+<p data-en="The module takes scene geometry and temporally consistent poses, trajectories, or interaction events from the action stage. It aims to produce a responsive cloud volume and reaction forces on moving bodies for the simulated scene." data-zh="模块接收场景几何，以及动作阶段提供的时序一致的姿态、轨迹或交互事件，目标是在仿真场景中生成能够响应交互的云体和作用于运动物体的反作用力。">模块接收场景几何，以及动作阶段提供的时序一致的姿态、轨迹或交互事件，目标是在仿真场景中生成能够响应交互的云体和作用于运动物体的反作用力。</p>
+<h3 data-en="Proposed approach" data-zh="拟采用的方法">拟采用的方法</h3>
+<p data-en="Represent cloud density, velocity, and temperature on an Eulerian grid. Couple the cloud and rigid body through localized momentum exchange, then study buoyancy and optional condensation and latent-heat effects. The emphasis is visual plausibility and numerical stability." data-zh="使用欧拉网格表示云的密度、速度与温度，通过局部动量交换耦合云与刚体，再研究浮力，以及可选的凝结与潜热效应，重点关注视觉合理性与数值稳定性。">使用欧拉网格表示云的密度、速度与温度，通过局部动量交换耦合云与刚体，再研究浮力，以及可选的凝结与潜热效应，重点关注视觉合理性与数值稳定性。</p>
+<p class="source-note" data-en="Clouds and fire belong to the broader effects work area; this thesis proposal specifically develops cloud–rigid body interaction." data-zh="云和火焰均属于特效研究范围；本开题报告具体聚焦云与刚体的交互。">云和火焰均属于特效研究范围；本开题报告具体聚焦云与刚体的交互。</p>
+<details>
+<summary data-en="Planned experiments &amp; evaluation" data-zh="实验与评估计划">实验与评估计划</summary>
+<div aria-label="云仿真实验计划" class="table-wrap" data-en-aria-label="Planned cloud simulation experiments" data-zh-aria-label="云仿真实验计划" role="region" tabindex="0">
+<table>
+<caption data-en="Controlled comparisons proposed in §2.2.3" data-zh="第 2.2.3 节提出的对照实验">第 2.2.3 节提出的对照实验</caption>
+<thead><tr><th data-en="Experiment" data-zh="实验" scope="col">实验</th><th data-en="What to examine" data-zh="考察内容" scope="col">考察内容</th></tr></thead>
+<tbody>
+<tr><td data-en="Static cloud" data-zh="静态云">静态云</td><td data-en="Baseline stability before introducing a moving body." data-zh="引入运动物体前的基线稳定性。">引入运动物体前的基线稳定性。</td></tr>
+<tr><td data-en="Kinematic intrusion" data-zh="运动物体侵入">运动物体侵入</td><td data-en="One-way disturbance as an object passes through the cloud." data-zh="物体穿过云体时的单向扰动。">物体穿过云体时的单向扰动。</td></tr>
+<tr><td data-en="Momentum coupling" data-zh="动量耦合">动量耦合</td><td data-en="Wake formation, drag, and momentum consistency." data-zh="尾流形成、阻力与动量一致性。">尾流形成、阻力与动量一致性。</td></tr>
+<tr><td data-en="Thermal coupling" data-zh="热耦合">热耦合</td><td data-en="Buoyancy and vertical motion." data-zh="浮力与垂直运动。">浮力与垂直运动。</td></tr>
+<tr><td data-en="Latent heat" data-zh="潜热">潜热</td><td data-en="The influence of simplified phase change." data-zh="简化相变过程的影响。">简化相变过程的影响。</td></tr>
+</tbody>
+</table>
+</div>
+<p data-en="Track momentum consistency, drag scaling, wake recovery, vertical motion, and numerical stability alongside visual comparisons." data-zh="结合视觉对比，跟踪动量一致性、阻力变化规律、尾流恢复、垂直运动与数值稳定性。">结合视觉对比，跟踪动量一致性、阻力变化规律、尾流恢复、垂直运动与数值稳定性。</p>
+</details>
+<details>
+<summary data-en="Proposed milestones &amp; next steps" data-zh="计划里程碑与后续工作">计划里程碑与后续工作</summary>
+<ol>
+<li data-en="Define the physical scope and review cloud simulation and fluid–solid coupling." data-zh="明确物理问题范围，调研云仿真与流固耦合。">明确物理问题范围，调研云仿真与流固耦合。</li>
+<li data-en="Build and validate a baseline cloud solver." data-zh="构建并验证基础云求解器。">构建并验证基础云求解器。</li>
+<li data-en="Integrate rigid-body motion and momentum exchange." data-zh="集成刚体运动与动量交换。">集成刚体运动与动量交换。</li>
+<li data-en="Study reaction forces, buoyancy, and optional latent heat." data-zh="研究反作用力、浮力及可选的潜热效应。">研究反作用力、浮力及可选的潜热效应。</li>
+<li data-en="Evaluate controlled interactions and produce a reproducible demonstration." data-zh="评估受控交互实验，制作可复现的演示。">评估受控交互实验，制作可复现的演示。</li>
+</ol>
+</details>
+</div>
+</section>
+<section aria-labelledby="member-4-title" class="member" id="member-4">
+<div class="work-label">
+<p class="step" data-en="Part 04" data-zh="第 04 部分">第 04 部分</p>
+<h2 data-en="3D Scene Generation" data-zh="三维场景生成" id="member-4-title">三维场景生成</h2>
+<p class="work-author" data-en="Ziran Yin" data-zh="殷梓然">殷梓然</p>
+</div>
+<div class="work-content">
+<p class="role-description" data-en="Reconstruct or generate 3D environments from scene images and video, providing scene geometry and layouts for animation and physical interaction." data-zh="根据场景图像和视频重建或生成三维环境，为动画与物理交互提供场景几何和空间布局。">根据场景图像和视频重建或生成三维环境，为动画与物理交互提供场景几何和空间布局。</p>
+<figure class="journal-media">
+<a aria-label="查看原尺寸校园场景" data-en-aria-label="View full-size campus scene" data-zh-aria-label="查看原尺寸校园场景" href="assets/campus_scene.png"><img alt="三维编辑器中的校园场景：弧形建筑围绕着绿化庭院，庭院中央设有红色雕塑。" data-en-alt="Campus scene in a 3D editor, showing a landscaped courtyard with a red sculpture surrounded by curved buildings." data-zh-alt="三维编辑器中的校园场景：弧形建筑围绕着绿化庭院，庭院中央设有红色雕塑。" height="314" loading="lazy" src="assets/campus_scene.png" width="566"/></a>
+<figcaption data-en="Campus scene · Ziran Yin’s 3D scene generation work." data-zh="校园场景 · 殷梓然 的三维场景生成工作。">校园场景 · 殷梓然 的三维场景生成工作。</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="member-5-title" class="member" id="member-5">
+<div class="work-label">
+<p class="step" data-en="Part 05" data-zh="第 05 部分">第 05 部分</p>
+<h2 data-en="Music Generation" data-zh="音乐生成" id="member-5-title">音乐生成</h2>
+<p class="work-author" data-en="Shengyu Li" data-zh="李晟宇">李晟宇</p>
+</div>
+<div class="work-content">
+<p class="role-description" data-en="Develop the music branch from the agent’s narrative directives, aligning musical mood and cues with the animation timeline." data-zh="根据智能体的叙事指令生成音乐，使音乐情绪与提示点对齐动画时间线。">根据智能体的叙事指令生成音乐，使音乐情绪与提示点对齐动画时间线。</p>
+</div>
+</section>
+<section aria-labelledby="member-6-title" class="member" id="member-6">
+<div class="work-label">
+<p class="step" data-en="Part 06" data-zh="第 06 部分">第 06 部分</p>
+<h2 data-en="Synchronization &amp; AI Memory" data-zh="同步与 AI 记忆" id="member-6-title">同步与 AI 记忆</h2>
+<p class="work-author" data-en="Bingchen Duan" data-zh="段柄辰">段柄辰</p>
+</div>
+<div class="work-content">
+<p class="role-description" data-en="Coordinate movement, music, and other outputs while maintaining consistent shared AI memory across shots." data-zh="协调动作、音乐及其他输出，同时保持跨镜头共享 AI 记忆的一致性。">协调动作、音乐及其他输出，同时保持跨镜头共享 AI 记忆的一致性。</p>
+<figure class="journal-media">
+<video aria-label="段柄辰 的音乐与舞蹈演示" controls="" data-en-aria-label="Music and dance demonstration by Bingchen Duan" data-zh-aria-label="段柄辰 的音乐与舞蹈演示" playsinline="" preload="metadata">
+<source src="assets/music_dance.mp4" type="video/mp4"/>
+<a data-en="Download the music and dance video" data-zh="下载音乐与舞蹈视频" href="assets/music_dance.mp4">下载音乐与舞蹈视频</a>.
+          </video>
+<figcaption data-en="Music and dance · Bingchen Duan’s synchronization demonstration." data-zh="音乐与舞蹈 · 段柄辰 的同步演示。">音乐与舞蹈 · 段柄辰 的同步演示。</figcaption>
+</figure>
+</div>
+</section>
+<footer><span data-en="Multimodal Animation · Project notebook" data-zh="多模态动画 · 项目记录">多模态动画 · 项目记录</span><a data-en="Back to top ↑" data-zh="返回顶部 ↑" href="#top">返回顶部 ↑</a></footer>
+</main>
+</body>
+</html>
+
