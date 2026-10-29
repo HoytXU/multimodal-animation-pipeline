@@ -33,6 +33,8 @@ a:focus-visible, summary:focus-visible, video:focus-visible { outline: 2px solid
 .role-description { margin-top: 0; }
 .work-content > :last-child { margin-bottom: 0; }
 .journal-media { width: 100%; max-width: 400px; margin: 18px 0 0; }
+.media-pair { display: flex; gap: 18px; align-items: flex-start; margin-top: 18px; }
+.media-pair .journal-media { flex: 1 1 0; max-width: none; margin-top: 0; }
 .journal-media img, .journal-media video { display: block; width: 100%; height: auto; max-height: 260px; object-fit: contain; border-radius: 5px; }
 .journal-media video { background: #111; }
 figcaption, .source-note { color: var(--muted); font-size: .76rem; line-height: 1.5; }
