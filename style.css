@@ -16,6 +16,8 @@ a:focus-visible, summary:focus-visible, video:focus-visible { outline: 2px solid
 .team-card { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px 0; color: var(--ink); text-decoration: none; border-radius: 8px; }
 .team-card:hover { background: #f5f7f5; }
 .avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.avatar-portrait { display: block; overflow: hidden; }
+.avatar-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 65%; transform: scale(2.1); transform-origin: 50% 58%; }
 .team-card h3 { margin: 12px 0 5px; font-size: 1rem; }
 .team-role { margin: 0 0 8px; font-size: .76rem; line-height: 1.45; color: var(--accent); }
 .team-contribution { margin: 0; font-size: .75rem; line-height: 1.5; color: var(--muted); }

@@ -47,10 +47,10 @@
 <p class="team-contribution" data-en="Creates music around narrative mood and animation cues." data-zh="根据叙事情绪与动画节奏生成音乐。">根据叙事情绪与动画节奏生成音乐。</p>
 </a>
 <a class="team-card" href="#member-6">
-<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
+<span class="avatar avatar-portrait"><img alt="" height="1440" src="assets/bingchen-duan-portrait.webp" width="960"/></span>
 <h3>Bingchen Duan</h3>
-<p class="team-role" data-en="Synchronization &amp; AI Memory" data-zh="同步与 AI 记忆">同步与 AI 记忆</p>
-<p class="team-contribution" data-en="Coordinates motion and music while maintaining continuity across shots." data-zh="协调动作与音乐，保持跨镜头的一致性。">协调动作与音乐，保持跨镜头的一致性。</p>
+<p class="team-role" data-en="Music &amp; Motion Synchronization" data-zh="音乐与动作同步">音乐与动作同步</p>
+<p class="team-contribution" data-en="Explores music-conditioned motion and its presentation on animated characters." data-zh="探索音乐条件下的动作生成与人物演示。">探索音乐条件下的动作生成与人物演示。</p>
 </a>
 </div>
 </section>
@@ -75,7 +75,7 @@
 <li><a data-en="Physical simulation" data-zh="物理仿真" href="#member-3">物理仿真</a><span data-en=" extends scene simulation with dynamic cloud–rigid body interactions." data-zh="为场景仿真加入动态的云与刚体交互。">为场景仿真加入动态的云与刚体交互。</span></li>
 <li><a data-en="3D scene generation" data-zh="三维场景生成" href="#member-4">三维场景生成</a><span data-en=" develops the environment from scene images or video." data-zh="根据场景图像或视频构建环境。">根据场景图像或视频构建环境。</span></li>
 <li><a data-en="Music generation" data-zh="音乐生成" href="#member-5">音乐生成</a><span data-en=" develops the music branch from narrative and timing cues." data-zh="根据叙事与时序提示生成音乐。">根据叙事与时序提示生成音乐。</span></li>
-<li><a data-en="Synchronization &amp; AI memory" data-zh="同步与 AI 记忆" href="#member-6">同步与 AI 记忆</a><span data-en=" coordinates directives, continuity, and a shared audiovisual timeline." data-zh="协调指令、连续性与共享视听时间线。">协调指令、连续性与共享视听时间线。</span></li>
+<li><a data-en="Music &amp; motion synchronization" data-zh="音乐与动作同步" href="#member-6">音乐与动作同步</a><span data-en=" explores how generated movement and music can be presented together on an audiovisual timeline." data-zh="探索生成动作与音乐如何在共同的视听时间线上呈现。">探索生成动作与音乐如何在共同的视听时间线上呈现。</span></li>
 </ol>
 </details>
 </section>
@@ -210,18 +210,29 @@ document.addEventListener('DOMContentLoaded', function () {
 <section aria-labelledby="member-6-title" class="member" id="member-6">
 <div class="work-label">
 <p class="step" data-en="Part 06" data-zh="第 06 部分">第 06 部分</p>
-<h2 data-en="Synchronization &amp; AI Memory" data-zh="同步与 AI 记忆" id="member-6-title">同步与 AI 记忆</h2>
+<h2 data-en="Music &amp; Motion Synchronization" data-zh="音乐与动作同步" id="member-6-title">音乐与动作同步</h2>
 <p class="work-author">Bingchen Duan</p>
 </div>
 <div class="work-content">
-<p class="role-description" data-en="Coordinate movement, music, and other outputs while maintaining consistent shared AI memory across shots." data-zh="协调动作、音乐及其他输出，同时保持跨镜头共享 AI 记忆的一致性。">协调动作、音乐及其他输出，同时保持跨镜头共享 AI 记忆的一致性。</p>
+<p class="role-description" data-en="Explore how generated music and dance motion can be brought together, from a moving skeleton to a character animation with a shared soundtrack." data-zh="探索如何将生成的音乐与舞蹈动作结合，从骨架动作到人物动画，在共同的时间线上呈现。">探索如何将生成的音乐与舞蹈动作结合，从骨架动作到人物动画，在共同的时间线上呈现。</p>
+<h3 data-en="Demonstrations" data-zh="演示">演示</h3>
+<p data-en="The examples below show a music-conditioned skeleton and a separate character retargeting test with music. They are demonstrations of the workflow; character binding and motion quality remain work in progress." data-zh="下方分别展示音乐条件下的骨架动作，以及配乐人物动作重定向试验。这些是工作流程演示，人物绑定和动作效果仍在优化。">下方分别展示音乐条件下的骨架动作，以及配乐人物动作重定向试验。这些是工作流程演示，人物绑定和动作效果仍在优化。</p>
+<div class="media-pair">
 <figure class="journal-media">
 <video aria-label="Bingchen Duan 的音乐与舞蹈演示" controls="" data-en-aria-label="Music and dance demonstration by Bingchen Duan" data-zh-aria-label="Bingchen Duan 的音乐与舞蹈演示" playsinline="" preload="metadata">
 <source src="assets/music_dance.mp4" type="video/mp4"/>
 <a data-en="Download the music and dance video" data-zh="下载音乐与舞蹈视频" href="assets/music_dance.mp4">下载音乐与舞蹈视频</a>.
           </video>
-<figcaption data-en="Music and dance · Bingchen Duan’s synchronization demonstration." data-zh="音乐与舞蹈 · Bingchen Duan 的同步演示。">音乐与舞蹈 · Bingchen Duan 的同步演示。</figcaption>
+<figcaption data-en="Music-conditioned skeleton motion demonstration." data-zh="音乐条件下的骨架动作演示。">音乐条件下的骨架动作演示。</figcaption>
 </figure>
+<figure class="journal-media">
+<video aria-label="人物舞蹈重定向与配乐试验" controls="" data-en-aria-label="Character dance retargeting test with music" data-zh-aria-label="人物舞蹈重定向与配乐试验" playsinline="" preload="metadata">
+<source src="assets/bingchen-character-dance.mp4" type="video/mp4"/>
+<a data-en="Download the character dance video" data-zh="下载人物舞蹈视频" href="assets/bingchen-character-dance.mp4">下载人物舞蹈视频</a>.
+</video>
+<figcaption data-en="Character retargeting test with music · approximately 30 seconds." data-zh="配乐人物动作重定向试验 · 约 30 秒。">配乐人物动作重定向试验 · 约 30 秒。</figcaption>
+</figure>
+</div>
 </div>
 </section>
 <footer><span data-en="Multimodal Animation · Project notebook" data-zh="多模态动画 · 项目记录">多模态动画 · 项目记录</span><a data-en="Back to top ↑" data-zh="返回顶部 ↑" href="#top">返回顶部 ↑</a></footer>
