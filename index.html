@@ -7,6 +7,7 @@
 <meta content="记录六位成员探索多模态三维动画的项目进展。" data-en-content="A shared project notebook documenting the evolving work of six members exploring multimodal 3D animation." data-zh-content="记录六位成员探索多模态三维动画的项目进展。" name="description"/>
 <title data-en="Multimodal Animation — Project Notebook" data-zh="多模态动画 — 项目记录">多模态动画 — 项目记录</title>
 <link href="style.css" rel="stylesheet"/>
+<link href="music-section.css" rel="stylesheet"/>
 <script defer="" src="language.js"></script></head>
 <body>
 <a class="skip-link" data-en="Skip to content" data-zh="跳转到内容" href="#team">跳转到内容</a>
@@ -41,10 +42,10 @@
 <p class="team-contribution" data-en="Builds environments and spatial layouts from scene references." data-zh="根据场景参考构建环境与空间布局。">根据场景参考构建环境与空间布局。</p>
 </a>
 <a class="team-card" href="#member-5">
-<img alt="" class="avatar" height="350" src="assets/member.jpg" width="350"/>
-<h3>Shengyu Li</h3>
-<p class="team-role" data-en="Music Generation" data-zh="音乐生成">音乐生成</p>
-<p class="team-contribution" data-en="Creates music around narrative mood and animation cues." data-zh="根据叙事情绪与动画节奏生成音乐。">根据叙事情绪与动画节奏生成音乐。</p>
+  <img class="avatar" src="assets/shengyu-li.png" width="1100" height="1429" alt="李晟宇个人照片" data-zh-alt="李晟宇个人照片" data-en-alt="Portrait of Shengyu Li">
+  <h3 data-zh="李晟宇" data-en="Shengyu Li">李晟宇</h3>
+  <p class="team-role" data-zh="音乐生成" data-en="Music Generation">音乐生成</p>
+<p class="team-contribution" data-zh="围绕动画叙事制作配乐，研究歌词与歌声生成。" data-en="Creates soundtracks for animation and studies lyric and singing-voice generation.">围绕动画叙事制作配乐，研究歌词与歌声生成。</p>
 </a>
 <a class="team-card" href="#member-6">
 <span class="avatar avatar-portrait"><img alt="" height="1440" src="assets/bingchen-duan-portrait.webp" width="960"/></span>
@@ -198,14 +199,109 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </section>
 <section aria-labelledby="member-5-title" class="member" id="member-5">
-<div class="work-label">
-<p class="step" data-en="Part 05" data-zh="第 05 部分">第 05 部分</p>
-<h2 data-en="Music Generation" data-zh="音乐生成" id="member-5-title">音乐生成</h2>
-<p class="work-author">Shengyu Li</p>
-</div>
-<div class="work-content">
-<p class="role-description" data-en="Develop the music branch from the agent’s narrative directives, aligning musical mood and cues with the animation timeline." data-zh="根据智能体的叙事指令生成音乐，使音乐情绪与提示点对齐动画时间线。">根据智能体的叙事指令生成音乐，使音乐情绪与提示点对齐动画时间线。</p>
-</div>
+  <div class="work-label">
+    <p class="step" data-en="Part 05" data-zh="第 05 部分">第 05 部分</p>
+    <h2 data-en="Music Generation" data-zh="音乐生成" id="member-5-title">音乐生成</h2>
+    <p class="work-author" data-en="Shengyu Li" data-zh="李晟宇">李晟宇</p>
+    <a class="music-portrait" href="assets/shengyu-li.png" target="_blank" rel="noopener" aria-label="打开李晟宇个人照片" data-zh-aria-label="打开李晟宇个人照片" data-en-aria-label="Open Shengyu Li’s portrait">
+      <img src="assets/shengyu-li.png" width="1100" height="1429" loading="lazy" alt="李晟宇个人照片" data-zh-alt="李晟宇个人照片" data-en-alt="Portrait of Shengyu Li">
+    </a>
+  </div>
+  <div class="work-content">
+    <p class="role-description" data-zh="围绕动画的故事、情绪与节奏设计配乐，使用 YuE2 制作和迭代项目音乐。相关研究包括 ARIA 的粤语歌词创作，以及正在推进的国语与粤语跨语言翻唱。" data-en="We design music around the animation’s story, mood and pacing, using YuE2 to create and refine soundtrack material. Related research includes Cantonese lyric authoring with ARIA and ongoing work on cross-language singing between Mandarin and Cantonese.">围绕动画的故事、情绪与节奏设计配乐，使用 YuE2 制作和迭代项目音乐。相关研究包括 ARIA 的粤语歌词创作，以及正在推进的国语与粤语跨语言翻唱。</p>
+    <h3 data-zh="研究问题" data-en="Research question">研究问题</h3>
+    <p data-zh="如何使音乐服务于动画叙事，并在歌词创作与歌声生成中兼顾语言表达、旋律约束和演唱效果？" data-en="How can music support an animated story while lyric writing and singing generation account for language, melody and vocal expression?">如何使音乐服务于动画叙事，并在歌词创作与歌声生成中兼顾语言表达、旋律约束和演唱效果？</p>
+    <h3 data-zh="项目配乐：YuE2" data-en="Project soundtrack: YuE2">项目配乐：YuE2</h3>
+    <p data-zh="以香港科技大学（广州）校园动画为应用场景，将分镜中的场景氛围与叙事变化转化为音乐段落、歌词和风格描述，使用 YuE2 生成配乐，并结合试听反馈持续调整。下方展示项目中生成的一个配乐样例。" data-en="For the HKUST (Guangzhou) campus animation, we translate scene atmosphere and narrative changes into musical sections, lyrics and style descriptions, then use YuE2 to generate and refine soundtrack material through listening and revision. One generated soundtrack sample is presented below.">以香港科技大学（广州）校园动画为应用场景，将分镜中的场景氛围与叙事变化转化为音乐段落、歌词和风格描述，使用 YuE2 生成配乐，并结合试听反馈持续调整。下方展示项目中生成的一个配乐样例。</p>
+    <figure class="journal-media music-audio">
+      <div class="music-track-heading">
+        <span class="music-track-title" data-zh="校园动画配乐" data-en="Campus animation soundtrack">校园动画配乐</span>
+        <span class="music-track-meta" data-zh="YuE2 · 约 1 分 36 秒" data-en="YuE2 · approx. 1 min 36 sec">YuE2 · 约 1 分 36 秒</span>
+      </div>
+      <audio controls preload="metadata" aria-label="播放 YuE2 校园动画配乐" data-zh-aria-label="播放 YuE2 校园动画配乐" data-en-aria-label="Play the YuE2 campus animation soundtrack">
+        <source src="assets/yue2-campus.mp3" type="audio/mpeg">
+        <a href="assets/yue2-campus.mp3" data-zh="下载配乐音频" data-en="Download the soundtrack audio">下载配乐音频</a>
+      </audio>
+      <figcaption data-zh="使用 YuE2 生成的项目配乐样例，保留本次提供音频的完整时长。" data-en="A project soundtrack sample generated with YuE2, presented for the full duration of the supplied audio.">使用 YuE2 生成的项目配乐样例，保留本次提供音频的完整时长。</figcaption>
+      <p class="music-downloads"><a href="assets/yue2-campus.mp3" download data-zh="下载 MP3" data-en="Download MP3">下载 MP3</a></p>
+    </figure>
+    <details class="music-brief">
+      <summary data-zh="创作方向" data-en="Creative direction">创作方向</summary>
+      <p data-zh="创作围绕校园游览、粤港澳大湾区协作与多元文化展开。V2 提示词以受香港流行音乐影响的国语流行为基础，将高胡、扬琴等广府器乐色彩与轻微未来感电子音色融入同一编曲。人声设定为自然、克制的年轻女声，以国语主唱，结尾副歌加入短句英语记忆点，不使用粤语歌词。" data-en="The creative direction centers on a campus journey, collaboration across the Greater Bay Area and cultural diversity. The V2 prompt combines Hong Kong-influenced Mandarin pop with Cantonese instrumental colors, including gaohu and yangqin, and subtle futuristic electronic textures in one arrangement. It calls for a natural, restrained youthful female Mandarin lead, with short English hooks only in the final chorus and no Cantonese lyrics.">创作围绕校园游览、粤港澳大湾区协作与多元文化展开。V2 提示词以受香港流行音乐影响的国语流行为基础，将高胡、扬琴等广府器乐色彩与轻微未来感电子音色融入同一编曲。人声设定为自然、克制的年轻女声，以国语主唱，结尾副歌加入短句英语记忆点，不使用粤语歌词。</p>
+      <p data-zh="段落设计从梦幻抵达、校园探索、大湾区联结推进到集体舞蹈副歌，对应“好奇—发现—联结—共同喜悦”的情绪变化。统一的旋律动机在高胡、人声、电钢琴与合成器之间重复和变化，保持编曲空间与歌手身份一致。" data-en="The planned sections move from a dreamy arrival and campus discovery to a wider Greater Bay Area connection and a final group-dance chorus, following an emotional arc of curiosity, discovery, connection and collective joy. One recognizable motif is reused and transformed across gaohu, voice, electric piano and synth, with a consistent singer and production space.">段落设计从梦幻抵达、校园探索、大湾区联结推进到集体舞蹈副歌，对应“好奇—发现—联结—共同喜悦”的情绪变化。统一的旋律动机在高胡、人声、电钢琴与合成器之间重复和变化，保持编曲空间与歌手身份一致。</p>
+      <div class="table-wrap" role="region" tabindex="0" aria-label="提示词中的四阶段音乐设计" data-zh-aria-label="提示词中的四阶段音乐设计" data-en-aria-label="Four-section design specified in the prompt">
+        <table>
+          <caption data-zh="V2 提示词中的段落设计" data-en="Section design specified in the V2 prompt">V2 提示词中的段落设计</caption>
+          <thead><tr><th scope="col" data-zh="小节" data-en="Bars">小节</th><th scope="col" data-zh="叙事与情绪" data-en="Story and mood">叙事与情绪</th><th scope="col" data-zh="编曲重点" data-en="Arrangement focus">编曲重点</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1–4</th><td data-zh="梦幻抵达 · 好奇" data-en="Dreamy arrival · curiosity">梦幻抵达 · 好奇</td><td data-zh="扬琴点缀、轻柔合成器氛围、简短高胡动机。" data-en="Yangqin sparkle, soft synth ambience and a short gaohu motif.">扬琴点缀、轻柔合成器氛围、简短高胡动机。</td></tr>
+            <tr><th scope="row">5–8</th><td data-zh="校园探索 · 发现" data-en="Campus discovery · discovery">校园探索 · 发现</td><td data-zh="国语主歌进入，加入电钢琴、干净吉他、温暖贝斯与克制鼓点。" data-en="Mandarin verse enters with electric piano, clean guitar, warm bass and restrained drums.">国语主歌进入，加入电钢琴、干净吉他、温暖贝斯与克制鼓点。</td></tr>
+            <tr><th scope="row">9–12</th><td data-zh="大湾区视野 · 联结" data-en="Greater Bay Area · connection">大湾区视野 · 联结</td><td data-zh="弦乐与电子琶音渐进，人声与高胡形成呼应。" data-en="Strings and subtle arpeggios build, with call-and-response between voice and gaohu.">弦乐与电子琶音渐进，人声与高胡形成呼应。</td></tr>
+            <tr><th scope="row">13–16</th><td data-zh="集体舞蹈副歌 · 共同喜悦" data-en="Group-dance chorus · collective joy">集体舞蹈副歌 · 共同喜悦</td><td data-zh="鼓、贝斯、弦乐和电子层次更饱满，加入短英语记忆点与和声。" data-en="Fuller drums, bass, strings and synth textures, with short English hooks and backing vocals.">鼓、贝斯、弦乐和电子层次更饱满，加入短英语记忆点与和声。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+    <details class="music-prompt" id="music-prompt">
+      <summary data-zh="V2 风格提示词 · 英文原文" data-en="V2 style prompt · original English text">V2 风格提示词 · 英文原文</summary>
+      <p class="music-prompt-note" data-zh="提示词目标：96 BPM、4/4 拍、约 16 小节与 40 秒；本次展示音频实长：95.879 秒（约 1 分 36 秒）。" data-en="Prompt target: 96 BPM, 4/4 meter, around 16 bars and 40 seconds. Supplied audio duration: 95.879 seconds (approximately 1 minute 36 seconds).">提示词目标：96 BPM、4/4 拍、约 16 小节与 40 秒；本次展示音频实长：95.879 秒（约 1 分 36 秒）。</p>
+      <p class="source-note" data-zh="以下保留本次提供的 style_v2.txt 内容，原文在中英文切换时保持不变。" data-en="The supplied style_v2.txt is reproduced below and remains unchanged when switching the page language.">以下保留本次提供的 style_v2.txt 内容，原文在中英文切换时保持不变。</p>
+      <pre id="yue2-style-prompt" lang="en">Modern Mandarin Hong Kong-influenced pop fused naturally with Cantonese instrumental colors and subtle futuristic electronic production.
+
+96 BPM, 4/4 meter, around 16 bars and approximately 40 seconds. The music should feel melodic, human, warm, youthful and emotionally expressive rather than like a generic corporate anthem or an exaggerated AI-generated cinematic track.
+
+Use a clear youthful female Mandarin lead vocal with natural phrasing and restrained emotion. English should appear only as short memorable hook lines in the final chorus. No Cantonese lyrics.
+
+The harmonic and melodic language should draw from polished Hong Kong pop: expressive melodic writing, warm electric piano, clean electric guitar, lyrical string arrangements, melodic bass and restrained pop drums. The song should develop gradually and leave space around the vocal instead of constantly adding layers.
+
+Integrate traditional Cantonese / Lingnan instrumental colors organically into the same arrangement. Use gaohu as short lyrical response phrases and countermelodies rather than continuous lead playing. Use yangqin for delicate rhythmic sparkle and ornamentation. Subtle dizi or light wooden percussion may appear occasionally. Use gentle pentatonic ornaments, but do not turn the music into Cantonese opera, folk pastiche, or stereotypical Chinese festival music.
+
+Keep subtle futuristic elements throughout: soft atmospheric synth pads, understated electronic arpeggios, modern sub bass and small digital textures. Traditional acoustic colors and electronic textures should coexist from the beginning rather than appearing as separate genre sections.
+
+Structure the song as one continuous musical journey:
+bars 1-4: dreamy arrival, airy and spacious, featuring yangqin sparkle, soft synth ambience and a short recognizable gaohu motif;
+bars 5-8: campus discovery, Mandarin verse enters with electric piano, clean guitar, warm bass and restrained drums;
+bars 9-12: broader Greater Bay Area feeling, gradually increase rhythmic motion with strings, subtle arpeggios and call-and-response between vocal and gaohu;
+bars 13-16: uplifting final chorus for a group dance, fuller drums, bass, strings, synth textures and layered backing vocals, but still melodic and song-like rather than an EDM festival drop.
+
+Maintain one recognizable melodic motif across all four sections. Reuse and transform it through gaohu, vocal melody, electric piano and synth rather than introducing unrelated melodies. Keep the same harmonic world, same singer identity and same production space throughout.
+
+The emotional arc is:
+curiosity -&gt; discovery -&gt; connection -&gt; collective joy.
+
+Avoid abrupt genre changes.
+Avoid overly dramatic trailer music.
+Avoid huge risers and drops.
+Avoid excessive vocal stacking.
+Avoid synthetic choir sounds.
+Avoid overly busy arrangements.
+Avoid cliché corporate inspirational music.
+Avoid exaggerated Chinese traditional stereotypes.
+Allow natural breathing space, small instrumental imperfections and human-like phrasing.
+</pre>
+      <p><a href="assets/style_v2.txt" download data-zh="下载 style_v2.txt" data-en="Download style_v2.txt">下载 style_v2.txt</a></p>
+    </details>
+    <h3 data-zh="ARIA：从歌声音频到粤语歌词" data-en="ARIA: from singing audio to Cantonese lyrics">ARIA：从歌声音频到粤语歌词</h3>
+    <p data-zh="ARIA 研究从歌声音频到粤语歌词的创作。在提供字级时间边界的条件下，TRATE 根据声学线索估计四档 0243 声调规划，DRA-TCLG 再结合该规划与检索得到的粤语词汇建议生成歌词。该工作已获 Findings of EMNLP 2026 接收，李晟宇为共同第一作者。" data-en="ARIA studies Cantonese lyric authoring from singing audio with supplied character-level time boundaries. TRATE estimates a four-level 0243 tonal plan from acoustic cues, and DRA-TCLG uses this plan with retrieved Cantonese lexical guidance to generate lyrics. The work has been accepted to Findings of EMNLP 2026, with Shengyu Li as a co-first author.">ARIA 研究从歌声音频到粤语歌词的创作。在提供字级时间边界的条件下，TRATE 根据声学线索估计四档 0243 声调规划，DRA-TCLG 再结合该规划与检索得到的粤语词汇建议生成歌词。该工作已获 Findings of EMNLP 2026 接收，李晟宇为共同第一作者。</p>
+    <figure class="journal-media music-method">
+      <a href="assets/aria-method.png" target="_blank" rel="noopener" aria-label="打开 ARIA 方法图原图" data-zh-aria-label="打开 ARIA 方法图原图" data-en-aria-label="Open the full-resolution ARIA method figure">
+        <img src="assets/aria-method.png" width="2445" height="1739" loading="lazy" alt="ARIA 方法图：TRATE 从歌声音频和字级时间边界估计 0243 声调规划；DRA-TCLG 结合该规划与词汇检索生成粤语歌词。" data-zh-alt="ARIA 方法图：TRATE 从歌声音频和字级时间边界估计 0243 声调规划；DRA-TCLG 结合该规划与词汇检索生成粤语歌词。" data-en-alt="ARIA architecture: TRATE estimates a 0243 tonal plan from singing audio and character-level time boundaries; DRA-TCLG generates Cantonese lyrics from the plan and retrieved lexical guidance.">
+      </a>
+      <figcaption data-zh="ARIA 两阶段框架：由带字级时间边界的歌声音频估计 0243 声调规划，再结合词汇检索生成粤语歌词。" data-en="ARIA’s two-stage framework: estimating a 0243 tonal plan from singing audio with character-level time boundaries, then generating Cantonese lyrics with lexical retrieval.">ARIA 两阶段框架：由带字级时间边界的歌声音频估计 0243 声调规划，再结合词汇检索生成粤语歌词。</figcaption>
+    </figure>
+    <p class="source-note music-source"><span data-zh="方法图截自论文第 4 页 Figure 2。" data-en="Method figure cropped from Figure 2 on page 4 of the paper.">方法图截自论文第 4 页 Figure 2。</span> <a href="https://arxiv.org/abs/2610.07902v1" target="_blank" rel="noopener">Li, Wang &amp; Liu · ARIA · arXiv:2610.07902v1</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p>
+    <h3 data-zh="国语与粤语跨语言翻唱" data-en="Mandarin–Cantonese cross-language singing">国语与粤语跨语言翻唱</h3>
+    <p class="music-status" data-zh="研究推进中" data-en="Research in progress">研究推进中</p>
+    <p data-zh="正在探索国语与粤语之间的同旋律歌词替换和跨语言翻唱，目标是在改变歌词及演唱语言的同时，尽量保留原有旋律、歌手音色与时长结构。目前已完成双语文本前端适配、原词重建评测，以及 LoRA 与全量 DiT 微调方案的对比，并开发了用于歌曲对筛选与复核的审核工具。后续继续推进配对数据与歌词编辑验证。" data-en="We are investigating melody-preserving lyric replacement and cross-language singing between Mandarin and Cantonese, aiming to change lyrics and the sung language while retaining the original melody, vocal identity and timing as closely as possible. Completed work includes bilingual text-frontend adaptation, original-lyric reconstruction evaluation, comparisons of LoRA and full DiT fine-tuning, and a song-pair review tool. Further work focuses on paired data and lyric-editing validation.">正在探索国语与粤语之间的同旋律歌词替换和跨语言翻唱，目标是在改变歌词及演唱语言的同时，尽量保留原有旋律、歌手音色与时长结构。目前已完成双语文本前端适配、原词重建评测，以及 LoRA 与全量 DiT 微调方案的对比，并开发了用于歌曲对筛选与复核的审核工具。后续继续推进配对数据与歌词编辑验证。</p>
+    <details>
+      <summary data-zh="与整体流程的衔接" data-en="Connection to the pipeline">与整体流程的衔接</summary>
+      <p data-zh="音乐模块依据分镜内容、情绪设定、片段时长和关键提示点，整理音乐段落、歌词与风格描述。生成和筛选后的音乐素材将供后续视听同步与视频合成使用，并结合画面继续调整段落衔接和时间安排。" data-en="The music module translates storyboard content, mood, segment duration and key cues into musical sections, lyrics and style descriptions. Generated and selected tracks are intended for audiovisual synchronization and video assembly, with transitions and timing refined as the visuals develop.">音乐模块依据分镜内容、情绪设定、片段时长和关键提示点，整理音乐段落、歌词与风格描述。生成和筛选后的音乐素材将供后续视听同步与视频合成使用，并结合画面继续调整段落衔接和时间安排。</p>
+    </details>
+    <details>
+      <summary data-zh="后续工作" data-en="Next steps">后续工作</summary>
+      <p data-zh="结合视频剪辑完善配乐段落、转场和关键提示点；记录每次生成的歌词、风格提示词与版本；在已有前端适配及原词重建结果的基础上，推进国语与粤语歌词替换的独立编辑评测。" data-en="Next steps are to refine musical sections, transitions and key cues alongside video editing; retain lyrics, style prompts and versions for each generation; and extend the current adaptation and original-lyric reconstruction work to independent Mandarin–Cantonese lyric-editing evaluations.">结合视频剪辑完善配乐段落、转场和关键提示点；记录每次生成的歌词、风格提示词与版本；在已有前端适配及原词重建结果的基础上，推进国语与粤语歌词替换的独立编辑评测。</p>
+    </details>
+  </div>
 </section>
 <section aria-labelledby="member-6-title" class="member" id="member-6">
 <div class="work-label">
