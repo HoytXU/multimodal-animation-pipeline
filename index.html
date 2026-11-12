@@ -6,9 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="记录六位成员探索多模态三维动画的项目进展。" data-en-content="A shared project notebook documenting the evolving work of six members exploring multimodal 3D animation." data-zh-content="记录六位成员探索多模态三维动画的项目进展。" name="description"/>
 <title data-en="Multimodal Animation — Project Notebook" data-zh="多模态动画 — 项目记录">多模态动画 — 项目记录</title>
-<link href="style.css?v=20261112-motion" rel="stylesheet"/>
+<link href="style.css?v=20261112-sync" rel="stylesheet"/>
 <link href="music-section.css?v=20261112" rel="stylesheet"/>
-<script defer="" src="language.js"></script></head>
+<script defer="" src="language.js"></script>
+<script defer="" src="motion-sync.js"></script></head>
 <body>
 <a class="skip-link" data-en="Skip to content" data-zh="跳转到内容" href="#team">跳转到内容</a>
 <main class="page" id="top">
@@ -318,22 +319,31 @@ Allow natural breathing space, small instrumental imperfections and human-like p
 <li><span class="motion-flow-number">3</span><span><strong data-en="Character animation" data-zh="人物动画">人物动画</strong><small data-en="Blender retargeting" data-zh="Blender 动作重定向">Blender 动作重定向</small></span></li>
 </ol>
 <h3 data-en="Paired demonstration" data-zh="配对演示">配对演示</h3>
-<p data-en="Both videos use the same generated music and dance sample, showing the original skeleton and its retargeting to the project character. Each video plays independently." data-zh="两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。两个视频需要分别播放。">两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。两个视频需要分别播放。</p>
+<p data-en="Both videos use the same generated music and dance sample, showing the original skeleton and its retargeting to the project character." data-zh="两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。">两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。</p>
 <div class="media-pair motion-pair">
 <figure class="journal-media">
-<video aria-label="配对骨架舞蹈与音乐" controls="" data-en-aria-label="Paired skeleton dance and music" data-zh-aria-label="配对骨架舞蹈与音乐" playsinline="" preload="metadata">
+<video id="paired-skeleton" aria-label="配对骨架舞蹈与音乐" controls="" data-en-aria-label="Paired skeleton dance and music" data-zh-aria-label="配对骨架舞蹈与音乐" playsinline="" preload="metadata">
 <source src="assets/bingchen-paired-skeleton.mp4" type="video/mp4"/>
 <a href="assets/bingchen-paired-skeleton.mp4" data-en="Download the skeleton dance video" data-zh="下载骨架舞蹈视频">下载骨架舞蹈视频</a>
 </video>
 <figcaption data-en="Skeleton motion with its generated soundtrack." data-zh="骨架动作与对应的生成音乐。">骨架动作与对应的生成音乐。</figcaption>
 </figure>
 <figure class="journal-media">
-<video aria-label="配对人物舞蹈与音乐" controls="" data-en-aria-label="Paired character dance and music" data-zh-aria-label="配对人物舞蹈与音乐" playsinline="" preload="metadata">
+<video id="paired-character" aria-label="配对人物舞蹈与音乐" controls="" data-en-aria-label="Paired character dance and music" data-zh-aria-label="配对人物舞蹈与音乐" playsinline="" preload="metadata">
 <source src="assets/bingchen-character-dance.mp4" type="video/mp4"/>
 <a href="assets/bingchen-character-dance.mp4" data-en="Download the character dance video" data-zh="下载人物舞蹈视频">下载人物舞蹈视频</a>
 </video>
 <figcaption data-en="The same motion retargeted to the project character." data-zh="同一动作重定向到项目人物的试验。">同一动作重定向到项目人物的试验。</figcaption>
 </figure>
+</div>
+<div class="motion-sync" id="motion-sync" hidden="">
+<div class="motion-sync-controls">
+<button id="motion-sync-play" type="button" disabled="">同步播放</button>
+<input id="motion-sync-progress" type="range" min="0" max="0" value="0" step="0.033333" aria-label="同步播放进度" disabled=""/>
+<span id="motion-sync-time">0:00 / 0:00</span>
+<button id="motion-sync-mute" type="button" aria-pressed="false">静音</button>
+</div>
+<p class="motion-sync-status" id="motion-sync-status" role="status">正在加载视频。</p>
 </div>
 <p class="motion-note" data-en="The clips are approximately 30 seconds long (896 frames at 30 fps). Character binding and foot contact remain work in progress; the videos illustrate the workflow rather than a formal synchronization evaluation." data-zh="视频约 30 秒（896 帧，30 帧/秒）。人物绑定和脚部接地仍在优化；这组视频用于展示流程，并非正式的同步效果评测。">视频约 30 秒（896 帧，30 帧/秒）。人物绑定和脚部接地仍在优化；这组视频用于展示流程，并非正式的同步效果评测。</p>
 <details class="motion-details">
