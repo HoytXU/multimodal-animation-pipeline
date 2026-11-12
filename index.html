@@ -311,14 +311,14 @@ Allow natural breathing space, small instrumental imperfections and human-like p
 <p class="work-author">Bingchen Duan</p>
 </div>
 <div class="work-content">
-<p class="role-description" data-en="Explore how generated music can guide dance motion and be brought together with character animation on a shared timeline." data-zh="探索如何用生成音乐引导舞蹈动作，并在共同的时间线上呈现人物动画。">探索如何用生成音乐引导舞蹈动作，并在共同的时间线上呈现人物动画。</p>
+<p class="role-description" data-en="Explore music-driven dance and joint music–motion generation, bringing the results into character animation." data-zh="探索音乐驱动舞蹈与音乐—动作联合生成，并将生成动作应用到人物动画。">探索音乐驱动舞蹈与音乐—动作联合生成，并将生成动作应用到人物动画。</p>
 <h3 data-en="From music to character animation" data-zh="从音乐到人物动画">从音乐到人物动画</h3>
 <ol class="motion-flow" aria-label="音乐与动作演示流程" data-en-aria-label="Music and motion demonstration workflow" data-zh-aria-label="音乐与动作演示流程">
 <li><span class="motion-flow-number">1</span><span><strong data-en="Music" data-zh="生成音乐">生成音乐</strong><small data-en="ACE-Step" data-zh="ACE-Step">ACE-Step</small></span></li>
 <li><span class="motion-flow-number">2</span><span><strong data-en="Dance motion" data-zh="音乐驱动舞蹈">音乐驱动舞蹈</strong><small data-en="InfiniteDance skeleton" data-zh="InfiniteDance 骨架动作">InfiniteDance 骨架动作</small></span></li>
 <li><span class="motion-flow-number">3</span><span><strong data-en="Character animation" data-zh="人物动画">人物动画</strong><small data-en="Blender retargeting" data-zh="Blender 动作重定向">Blender 动作重定向</small></span></li>
 </ol>
-<h3 data-en="Paired demonstration" data-zh="配对演示">配对演示</h3>
+<h3 data-en="Cascade: paired demonstration" data-zh="级联方案：配对演示">级联方案：配对演示</h3>
 <p data-en="Both videos use the same generated music and dance sample, showing the original skeleton and its retargeting to the project character." data-zh="两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。">两段视频使用同一组生成音乐和舞蹈动作，分别展示原始骨架和映射到项目人物的试验。</p>
 <div class="media-pair motion-pair">
 <figure class="journal-media">
@@ -346,6 +346,17 @@ Allow natural breathing space, small instrumental imperfections and human-like p
 <p class="motion-sync-status" id="motion-sync-status" role="status">正在加载视频。</p>
 </div>
 <p class="motion-note" data-en="The clips are approximately 30 seconds long (896 frames at 30 fps). Character binding and foot contact remain work in progress; the videos illustrate the workflow rather than a formal synchronization evaluation." data-zh="视频约 30 秒（896 帧，30 帧/秒）。人物绑定和脚部接地仍在优化；这组视频用于展示流程，并非正式的同步效果评测。">视频约 30 秒（896 帧，30 帧/秒）。人物绑定和脚部接地仍在优化；这组视频用于展示流程，并非正式的同步效果评测。</p>
+<h3 data-en="Joint music–motion generation" data-zh="音乐与动作联合生成">音乐与动作联合生成</h3>
+<p data-en="Alongside the cascade, MuMoJoint explores generating music and dance together. An early system connects music and motion generators through a shared, time-aware hub so that the two streams can exchange generation context." data-zh="除了先生成音乐再生成动作的级联方案，我们也通过 MuMoJoint 探索音乐与舞蹈的联合生成。早期方案使用共享的时序信息模块连接音乐与动作生成器，让两侧交换生成过程中的上下文。">除了先生成音乐再生成动作的级联方案，我们也通过 MuMoJoint 探索音乐与舞蹈的联合生成。早期方案使用共享的时序信息模块连接音乐与动作生成器，让两侧交换生成过程中的上下文。</p>
+<figure class="journal-media">
+<video aria-label="MuMoJoint 早期音乐与骨架动作联合生成演示" controls="" data-en-aria-label="Early MuMoJoint music and skeleton motion generation demo" data-zh-aria-label="MuMoJoint 早期音乐与骨架动作联合生成演示" playsinline="" preload="metadata">
+<source src="assets/bingchen-joint-early.mp4" type="video/mp4"/>
+<a href="assets/bingchen-joint-early.mp4" data-en="Download the early joint generation video" data-zh="下载早期联合生成视频">下载早期联合生成视频</a>
+</video>
+<figcaption data-en="An early MuMoJoint sample: generated music and skeleton motion, approximately 30 seconds." data-zh="MuMoJoint 早期样例：生成音乐与骨架动作，约 30 秒。">MuMoJoint 早期样例：生成音乐与骨架动作，约 30 秒。</figcaption>
+</figure>
+<p data-en="A later experiment connects frozen ACE-Step and InfiniteDance experts with shared cross-modal memory and correction branches. Initial training and pathway checks have been completed; a complete free-generation quality comparison for this later model remains outstanding in the latest local records." data-zh="后续实验使用共享跨模态记忆和修正分支连接冻结的 ACE-Step 与 InfiniteDance 专家，已完成初步训练和路径检查。本地最新记录中，该后续模型的完整自由生成质量对照仍待完成。">后续实验使用共享跨模态记忆和修正分支连接冻结的 ACE-Step 与 InfiniteDance 专家，已完成初步训练和路径检查。本地最新记录中，该后续模型的完整自由生成质量对照仍待完成。</p>
+<p class="motion-note" data-en="The video shows the earlier joint system, not the later two-expert experiment. It is an illustrative sample, not a formal comparison with the cascade above." data-zh="视频展示的是早期联合方案，并非后续双专家实验；该样例用于展示流程，不是与上方级联方案的正式对照。">视频展示的是早期联合方案，并非后续双专家实验；该样例用于展示流程，不是与上方级联方案的正式对照。</p>
 <details class="motion-details">
 <summary data-en="Earlier skeleton experiment" data-zh="查看此前的骨架实验">查看此前的骨架实验</summary>
 <p data-en="A separate earlier music-driven skeleton demonstration, shown for comparison." data-zh="此前另一组音乐驱动骨架演示，作为独立实验保留。">此前另一组音乐驱动骨架演示，作为独立实验保留。</p>
