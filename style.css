@@ -54,6 +54,7 @@ li { margin-bottom: 8px; }
 #member-6 .motion-flow strong, #member-6 .motion-flow small { display: block; }
 #member-6 .motion-flow strong { font-size: .88rem; font-weight: normal; }
 #member-6 .motion-flow small { color: var(--muted); font-size: .72rem; line-height: 1.5; }
+#member-6 .motion-pair .journal-media video { aspect-ratio: 16 / 9; max-height: none; object-fit: contain; background: #30363b; }
 #member-6 .motion-note { margin-top: 14px; color: var(--muted); font-size: .8rem; line-height: 1.6; }
 #member-6 .motion-details > p { margin-top: 10px; }
 #member-6 .motion-sync { margin-top: 12px; }
