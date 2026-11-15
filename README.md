@@ -22,3 +22,20 @@ All content is edited in the HTML; the page does not save in-browser edits. Nati
 ## Source material
 
 The overview follows the supplied pipeline diagram. Hao Xu’s section summarizes §§2.1–2.3 of the supplied thesis proposal; planned methods and experiments are not presented as completed results. The original PDF is not included in the site. The six work areas follow the current requested roles; member names and assignments follow the user’s latest instructions.
+
+## Music section assets
+
+Part 05 uses `assets/full-song-cantonese.mp3` for browser playback and links to
+`assets/full-song-cantonese.flac`, the unchanged original supplied by Shengyu Li.
+The MP3 is a 256 kbps listening copy converted with FFmpeg, without trimming,
+mixing, loudness normalization, or changes to pitch or playback speed. The full
+track runs approximately 96 seconds. Credits: YuE2 music generation and
+Ying Music Singer Plus singing generation, with Cantonese adaptation
+fine-tuning and lyric writing by Shengyu Li.
+
+`assets/shengyu-listening-qr.png` is the supplied QR poster, preserved unchanged.
+The QR image and its caption both link to its decoded listening-page URL, so the
+examples can also be opened on the same device. `music-section.css` contains the
+scoped presentation styles; maintain both Chinese and English text attributes
+when editing this section. The former soundtrack prompts describe an older
+sample and are no longer displayed with the Cantonese track.
