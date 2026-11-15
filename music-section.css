@@ -13,3 +13,7 @@
 #member-5 .music-downloads { margin: 10px 0 0; font-size: .76rem; }
 #member-5 audio:focus-visible { outline: 2px solid var(--accent, #355b70); outline-offset: 5px; }
 @media (max-width: 420px) { #member-5 .music-audio { padding: 14px 10px 12px; } }
+
+#member-5 details p { margin-top: 10px; }
+#member-5 .music-prompt pre { max-width: 100%; padding: 16px; border: 1px solid var(--line, #dfe4df); border-radius: 5px; background: #f8faf9; white-space: pre-wrap; overflow-wrap: anywhere; font: .82rem/1.7 ui-monospace, monospace; }
+#member-5 .music-prompt-note { color: var(--muted, #68716c); font-size: .82rem; }

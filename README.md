@@ -37,5 +37,7 @@ fine-tuning and lyric writing by Shengyu Li.
 The QR image and its caption both link to its decoded listening-page URL, so the
 examples can also be opened on the same device. `music-section.css` contains the
 scoped presentation styles; maintain both Chinese and English text attributes
-when editing this section. The former soundtrack prompts describe an older
-sample and are no longer displayed with the Cantonese track.
+when editing this section. The original creative direction, four-section plan and V2 style prompt are
+retained in collapsed sections, with a TXT download. They are explicitly labeled
+as references for the earlier Mandarin version, rather than generation settings
+for the current Cantonese track. Preserve the original English prompt text.
